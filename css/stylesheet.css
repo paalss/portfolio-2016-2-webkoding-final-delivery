@@ -1,0 +1,250 @@
+/*
+     File: stylesheet.css
+     Date: 14-12-2016
+     Author: Pål Syvertsen Stakvik
+     Student Number: 472511
+     email: paalsst@stud.ntnu.no
+*/
+@charset "UTF-8";
+
+/*mobile first method*/
+* {
+    margin:          0;
+    padding:         0;
+}
+html {
+    font-size:       100%;    /*100%=16px*/
+}
+body {
+    background-color: #48a2ff;
+}
+/*TEXT*/
+/*h*/
+h1, h2 {
+    font-family:     "Open Sans", sans-serif;
+    font-weight:     400;
+}
+h1 {
+    margin:          0 0 10px 0;
+    font-size:       2em;
+    color:           #fff;
+    text-align:      center;
+    text-shadow:     0px 1px 0px rgba(0, 0, 0, 1);
+}
+h1 a {
+    font-family:     inherit;
+    color:           inherit;
+    text-decoration: none;
+}
+h2 {
+    margin:          0 0 20px 0;
+    font-size:       1.3em;
+    color:           #48a2ff;
+}
+h3 {
+    margin:          0 0 20px 0;
+    font-family:     "Noto Sans", "Helvetica", sans-serif;
+    font-size:       1.1em;
+    font-weight:     400;
+    color:           #48a2ff;
+}
+/*p, a, ul, ol, li*/
+p, a, ul, ol {
+    font-family:     "Noto Sans", "Helvetica", sans-serif;
+    font-size:       1em;
+    font-weight:     400;
+}
+header p, footer p {
+    margin:          0;
+    line-height:     1em;
+    color:           #fff;
+    
+}
+main p, main ul, main ol {
+    margin:          0 0 25px 0;
+    max-width:       30em;
+    line-height:     1.5em;
+    color:           #000;
+}
+main li {
+    margin-left:     35px;    /*li indent*/
+}
+/*TEXT_end*/
+.mainbg {
+    background-color: #fff;
+}
+.container {
+    width:           90vw;
+    margin:          0 auto;
+}
+header, footer {
+    background-color: #48a2ff;
+}
+header {
+    padding:         45px 5vw 25px 5vw;
+}
+footer {
+    padding:         15px 5vw;
+}
+nav {
+    margin:          0;
+    padding:         0;
+    background-color: #f2f2f2;
+    border-top:      5px solid #c2c2c2;
+    border-bottom:   5px solid #c2c2c2;
+}
+nav a {
+    padding:         24px 10vw;
+    display:         block;
+    line-height:     1em;
+    text-decoration: none;
+    text-align:      center;
+}
+nav a.border {
+    border-bottom:   2px solid #c2c2c2;
+} 
+nav a:link, nav a:visited {
+    color:           #000;
+}
+nav a:hover, nav a:active {
+    color:           #42a2ff;
+}
+nav a.current {
+    color:           #48a2ff;
+    background-color: #fff;
+}
+main {
+    padding:         45px 5vw 35px 5vw;
+    background-color: #fff;
+}
+main .mail a {
+    padding:         20px 0;
+    display:         block;
+    text-decoration: none;
+    border-bottom:   2px solid #c2c2c2;
+}
+
+main .mail a:link, main .mail a:visited {
+    color:           #000;
+}
+main .mail a:hover, main .mail a:active {
+    color:           #42a2ff;
+    background-color: #fff;
+}
+main .pal {
+    width:           100%;
+}
+main .box {
+    margin:          5px 2vw 5px 2vw;
+    width:           35vw;
+    float:           left;
+    background-color: #fafafa;
+}
+main .box .boximage {
+    height:          35vw;
+    width:           inherit;
+    overflow:        hidden;
+}
+main .box .boximage .formatp {
+    width:           inherit;
+}
+main .box .boximage .formatl {
+    height:          inherit;
+}
+main .box p {
+    margin:          1vw 0 1vw 0;
+    font-size:       0.9em;
+    text-align:      center;
+}
+main .box .textsmall {
+    font-size:       0.45em;
+}
+.clearfix {
+    clear:           both;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    h1 {
+        text-align:      left;
+    }
+    .mainbg {
+        background-color: #ebebeb;
+    }
+    .container {
+        width:           80vw;
+    }
+    header {
+        padding:         45px 8vw 25px 8vw;
+    }
+    footer {
+        padding:         15px 8vw;
+    }
+    nav {
+        padding:         0 9vw;
+        background-color: #fff;
+        border-top:      none;
+        border-bottom:   3px solid #c2c2c2;
+    }
+    nav a {
+        padding:         20px 3%;
+        display:         inline-block;
+    }
+    nav a.border {
+        border-bottom:   none;
+    }
+    nav a:hover, nav a:active {
+    }
+    nav a.current {
+        -webkit-box-shadow:   0px 3px 0px 0px #48a2ff;
+        -moz-box-shadow:      0px 3px 0px 0px #48a2ff;
+        box-shadow:           0px 3px 0px 0px #48a2ff;
+        background:      none;
+    }
+    main {
+        background-color: #fafafa;
+    }
+    main .mail a {
+        padding:         20px 5%;
+        display:         inline-block;
+    }
+    main .pal {
+        width:           200px;
+    }
+    main .box {
+        margin:          5px 1.2vw 5px 1.2vw;
+        width:           15vw;
+    }
+    main .box .boximage {
+        height:          15vw;
+    }
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .container {
+        width:           70vw;
+    }
+    header {
+        padding:         45px 14vw 25px 14vw;
+    }
+    footer {
+        padding:         15px 14vw;
+    }
+    nav {
+        padding:         0 15vw;
+    }
+    main .welcome-text {
+        width:           70%;
+        float:           right;
+    }
+    main .pal {
+        width:           25%;
+    }
+    main .box {
+        margin:          5px 1vw 5px 1vw;
+        width:           10vw;
+    }
+    main .box .boximage {
+        height:          10vw;
+    }
+}
